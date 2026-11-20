@@ -1,23 +1,39 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="css/style.css">
+    <title>Contact | North Woods Coffee Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
- <nav id="main-navigation">
+<body>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="catering.html">Catering</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <header>
+        <h1>North Woods Coffee Company</h1>
+        <p>Locally Roasted. Thoughtfully Crafted.</p>
+
+        <button class="menu-toggle" type="button"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+            Menu
+        </button>
+
+        <nav class="site-nav" id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
+    </header>
 
-  <section id="contact">
+    <main>
+
+        <section id="contact" class="page-section">
 
             <h2>Contact Us</h2>
 
@@ -25,41 +41,42 @@
                 Visit North Woods Coffee Company in Bangor or contact
                 us to learn more about our coffee, catering, and events.
             </p>
-            
-        <form action="#" method="post">
 
-            <p>
-              <label for="name">Your Name</label>
-               <input type="text" id="name" name="name" required>
-          </p>
+            <form id="contact-form">
 
-            <p>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </p>
+                <p>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
 
-         <p>
-              <label for="message">How Can We Help?</label>
-               <textarea id="message" name="message" rows="5" required></textarea>
-         </p>
+                <p>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-    <button type="submit">Send Message</button>
+                <p>
+                    <label for="message">How Can We Help?</label>
+                    <textarea id="message" name="message"
+                              rows="5" required></textarea>
+                </p>
 
-</form>
+                <button type="submit">Send Message</button>
+
+                <p id="form-message"
+                   class="form-message"
+                   role="status"
+                   aria-live="polite">
+                </p>
+
+            </form>
+
         </section>
 
     </main>
 
-
     <footer>
-
-        <p>
-            &copy; 2026 North Woods Coffee Company.
-            All rights reserved.
-        </p>
-
+        <p>&copy; 2026 North Woods Coffee Company. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>

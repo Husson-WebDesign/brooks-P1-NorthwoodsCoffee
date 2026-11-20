@@ -1,42 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>North Woods Coffee Company</title>
-
+    <title>Home | North Woods Coffee Company</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-
 <body>
 
     <header>
-
         <h1>North Woods Coffee Company</h1>
-
         <p>Locally Roasted. Thoughtfully Crafted.</p>
 
-        <button class="menu-toggle"
-        aria-expanded="false"
-        aria-controls="main-navigation">
-        Menu
+        <button class="menu-toggle" type="button"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+            Menu
         </button>
 
-        <nav id="main-navigation">
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#catering">Catering</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-    </nav>
-
+        <nav class="site-nav" id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -44,7 +36,6 @@
         <section id="home" class="hero">
 
             <div class="hero-content">
-
                 <h2>Great Coffee, Maine Inspired.</h2>
 
                 <p>
@@ -56,62 +47,23 @@
                     down and enjoy something thoughtfully made.
                 </p>
 
-                <a href="#menu" class="button">Explore Our Menu</a>
-
+                <a href="menu.html" class="button">
+                    Explore Our Menu
+                </a>
             </div>
 
             <div class="hero-image">
                 <img src="images/business-interior.jpg"
-                    alt="Customers seated inside the local coffee shop">
+                     alt="Customers seated inside the local coffee shop">
             </div>
 
         </section>
 
-
-
-        <section id="contact">
-
-            <h2>Contact Us</h2>
-
-            <p>
-                Visit North Woods Coffee Company in Bangor or contact
-                us to learn more about our coffee, catering, and events.
-            </p>
-            
-        <form action="#" method="post">
-
-            <p>
-              <label for="name">Your Name</label>
-               <input type="text" id="name" name="name" required>
-          </p>
-
-            <p>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </p>
-
-         <p>
-              <label for="message">How Can We Help?</label>
-               <textarea id="message" name="message" rows="5" required></textarea>
-         </p>
-
-    <button type="submit">Send Message</button>
-
-</form>
-        </section>
-
     </main>
 
-
     <footer>
-
-        <p>
-            &copy; 2026 North Woods Coffee Company.
-            All rights reserved.
-        </p>
-
+        <p>&copy; 2026 North Woods Coffee Company. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>

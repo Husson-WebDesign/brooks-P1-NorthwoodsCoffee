@@ -1,25 +1,39 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="css/style.css">
+    <title>About | North Woods Coffee Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
- <nav id="main-navigation">
+<body>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="catering.html">Catering</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <header>
+        <h1>North Woods Coffee Company</h1>
+        <p>Locally Roasted. Thoughtfully Crafted.</p>
 
-    </nav>
+        <button class="menu-toggle" type="button"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+            Menu
+        </button>
 
+        <nav class="site-nav" id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section id="about">
+    <main>
+
+        <section id="about" class="page-section">
 
             <h2>About Us</h2>
 
@@ -32,21 +46,20 @@
 
             <p>
                 The café was created as a comfortable neighborhood
-                gathering place where students, professionals,
-                families, travelers, and local residents can enjoy
-                carefully prepared coffee in a relaxed environment.
-                The company purchases coffee from responsible suppliers
-                and roasts in small batches to maintain quality
-                and consistency.
+                gathering place where students, professionals, families,
+                travelers, and local residents can enjoy carefully prepared
+                coffee in a relaxed environment. The company purchases coffee
+                from responsible suppliers and roasts in small batches to
+                maintain quality and consistency.
             </p>
 
             <h2>Our Story</h2>
 
             <p>
                 North Woods Coffee Company began with a simple idea:
-                excellent coffee should feel approachable. The café
-                combines carefully roasted beans, familiar Maine flavors,
-                and a comfortable neighborhood atmosphere.
+                excellent coffee should feel approachable. The café combines
+                carefully roasted beans, familiar Maine flavors, and a
+                comfortable neighborhood atmosphere.
             </p>
 
             <h2>Locally Roasted Coffee</h2>
@@ -83,15 +96,11 @@
 
         </section>
 
-        <footer>
+    </main>
 
-        <p>
-            &copy; 2026 North Woods Coffee Company.
-            All rights reserved.
-        </p>
-
+    <footer>
+        <p>&copy; 2026 North Woods Coffee Company. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
